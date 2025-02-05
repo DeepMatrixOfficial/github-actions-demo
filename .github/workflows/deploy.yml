@@ -32,4 +32,4 @@ jobs:
         uses: actions/upload-pages-artifact@v2  # Updated to v4
 
       - name: Deploy
-        uses: actions/deploy-pages@v2  # Updated to v4
+        uses: actions/deploy-pages@v4  # Updated to v4
