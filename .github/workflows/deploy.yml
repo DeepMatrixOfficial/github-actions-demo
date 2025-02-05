@@ -30,7 +30,7 @@ jobs:
         run: npm run build
 
       - name: Upload Build Artifact
-        uses: actions/upload-pages-artifact@v2  # v2 is the latest working version for GitHub Pages artifact upload
+        uses: actions/upload-pages-artifact@v2  # Correct action version for upload
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2  # v2 is still the latest version for deploy-pages action
+        uses: actions/deploy-pages@v2  # Correct action version for deploy
