@@ -13,6 +13,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -28,8 +29,8 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: actions/upload-pages-artifact@v2  # Updated to v4
+      - name: Upload Build Artifact
+        uses: actions/upload-pages-artifact@v2  # v2 is the latest working version for GitHub Pages artifact upload
 
-      - name: Deploy
-        uses: actions/deploy-pages@v4  # Updated to v4
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2  # v2 is still the latest version for deploy-pages action
