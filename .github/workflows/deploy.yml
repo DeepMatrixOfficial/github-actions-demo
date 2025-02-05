@@ -23,7 +23,7 @@ jobs:
           echo "This is a simple text file for GitHub Pages." > build/index.txt
 
       - name: Upload Build Artifact
-        uses: actions/upload-pages-artifact@v2  # Correct action version for upload
+        uses: actions/upload-pages-artifact@v3  # Correct action version for upload
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2  # Correct action version for deploy
+        uses: actions/deploy-pages@v3  # Correct action version for deploy
